@@ -7,8 +7,8 @@
 | 1 | Foto Wisuda (Sihir Cahaya Photography) | https://sites.google.com/view/sihircahaya-photography-smg |
 | 2 | Resep Masakan Diet (Piring Kos) | https://piringkos.netlify.app/ |
 | 3 | Souvenir Custom (Dearly) | https://dearly-souvernir.netlify.app |
-| 4 | Undangan Digital | (menyusul) |
-| 5 | Itinerary Destinasi | (menyusul) |
+| 4 | Undangan Digital | https://claude.ai/artifact/B15qWEmPjK5oDpSVut95T9 |
+| 5 | Itinerary Destinasi | https://rutekitaa.netlify.app/ |
 
 ## Anggota Kelompok
 
