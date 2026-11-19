@@ -1,4 +1,4 @@
-# lab-sains-data-kelompok-1
+# lab-pemograman-1
 
 ## Daftar 5 Bisnis Terpilih (Short List)
 
