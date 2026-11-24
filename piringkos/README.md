@@ -25,15 +25,16 @@ Paket: Menu Siap 1 Hari Rp5.000, 1 Minggu Rp12.000, 4 Minggu Rp40.000, dan Menu 
 
 ```
 piringkos/
-├── index.html, kalkulator.html, paket.html, custom.html
+├── index.html, resep.html, kalkulator.html, paket.html, custom.html
 ├── css/
 │   ├── variables.css   warna, huruf, jarak (ubah tema di sini)
-│   └── style.css       gaya semua halaman + responsif
+│   ├── style.css       gaya semua halaman + responsif
+│   └── resep.css       gaya khusus halaman resep
 ├── js/
 │   ├── icons.js        ikon SVG (pengganti emoji)
 │   ├── components.js   navbar, footer, tombol WhatsApp, pengaturan situs
 │   ├── data.js         gaya diet, resep, menu 7 hari, daftar belanja, paket
-│   ├── beranda.js, kalkulator.js, paket.js, custom.js
+│   ├── beranda.js, resep.js, kalkulator.js, paket.js, custom.js
 └── assets/
     └── favicon.svg
 ```
