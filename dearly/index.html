@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEARLY — Made with someone in mind</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="navbar"></header>
+
+<main>
+<!-- ================= HOME ================= -->
+<section data-page="home">
+  <div class="sec hero"><div class="wrap split">
+    <div class="stack" style="gap:26px">
+      <p class="eye">Personalized gifts · from Rp10K</p>
+      <h1><span>Made with</span><span class="in"><em>someone</em></span><span>in mind.</span></h1>
+      <p class="lede">Little gifts, made personal. Tell us about someone you love, and we'll turn the little things that make them special into something meaningful.</p>
+      <div class="row"><button class="btn pri" data-go="create">Create your gift →</button><button class="btn" data-go="shop">Explore collection</button></div>
+    </div>
+    <div class="art wide" data-art="box" data-tone="blush"></div>
+  </div></div>
+
+  <div class="sec"><div class="wrap split">
+    <div class="stack">
+      <p class="eye">What DEARLY is</p>
+      <h2 class="h2">You choose the piece. <em>We make the meaning.</em></h2>
+      <p class="lede">Kamu pilih satu hadiah kecil sesuai budget, lalu ceritakan tentang penerimanya: cara dia bicara, apa yang dia suka, inside joke kalian. Kami ubah cerita itu jadi desain: warna, tipografi, sticker, kartu ucapan, dan packaging.</p>
+      <p class="lede">Kamu tahu barangnya. Hasil akhirnya tetap jadi kejutan.</p>
+    </div>
+    <div class="art" data-art="card" data-tone="cream"></div>
+  </div></div>
+
+  <div class="sec-sm"><div class="wrap">
+    <div class="head"><h2>Two collections. <em>One gift</em> each.</h2><p class="lede">Setiap tier punya 5 pilihan. Pilih satu, kami personalisasi untuknya.</p></div>
+    <div class="tiers" id="home-tiers"></div>
+  </div></div>
+
+  <div class="sec"><div class="wrap">
+    <div class="head"><h2>Good places <em>to start</em></h2></div>
+    <div class="grid" id="home-picks"></div>
+  </div></div>
+
+  <div class="sec-sm"><div class="wrap">
+    <div class="head"><h2>How it works</h2><button class="btn link" data-go="how">The full story →</button></div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Choose</h3><p>Pilih budget dan satu hadiah.</p></div>
+      <div class="step"><span class="n">02</span><h3>Tell</h3><p>Ceritakan tentang penerimanya.</p></div>
+      <div class="step"><span class="n">03</span><h3>Create</h3><p>Kami buat desain, wording, sticker, dan packaging.</p></div>
+      <div class="step"><span class="n">04</span><h3>Surprise</h3><p>Hadiah yang terasa benar-benar miliknya.</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec soft"><div class="wrap split">
+    <div class="art" data-art="keychain" data-tone="sage" data-name="Nadia"></div>
+    <div class="stack">
+      <div class="row"><span class="tag">From story to gift</span><span class="flag">○ Concept mockup</span></div>
+      <p class="brief">“She's always late, loves matcha, and somehow cares about everyone.”</p>
+      <ul class="list"><li>Sage and cream palette</li><li>Playful typography</li><li>Custom keychain</li><li>Sticker “OTW”</li><li>Personalized greeting card</li></ul>
+      <p class="msg">“Small gift. Big personality.”</p>
+      <div><button class="btn" data-go="stories">More gift stories →</button></div>
+    </div>
+  </div></div>
+
+  <div class="sec"><div class="wrap split">
+    <div class="stack">
+      <p class="eye">Group gifting</p>
+      <h2 class="h2">Twenty people. <em>Twenty</em> little stories.</h2>
+      <p class="lede">Untuk demisioner, wisuda, KKN, atau satu kepanitiaan. Satu tema untuk grup, nama dan pesan berbeda untuk tiap orang.</p>
+      <p class="msg">20 orang × Rp15.000 = Rp300.000</p>
+      <div><button class="btn pri" data-go="group">Estimate a group order →</button></div>
+    </div>
+    <div class="art sq" data-art="tags" data-tone="cream"></div>
+  </div></div>
+
+  <div class="sec band"><div class="wrap stack">
+    <p class="eye">Some things are too personal to be ordinary</p>
+    <h2>Tell us the little things. <em>We'll take it from here.</em></h2>
+    <div class="row"><button class="btn pri" data-go="create">Create your gift →</button></div>
+  </div></div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section data-page="shop" hidden>
+  <div class="ph"><div class="wrap">
+    <p class="eye">Shop gifts</p>
+    <h1>Choose the piece. <em>We'll make it theirs.</em></h1>
+    <p class="lede">Setiap gift sudah termasuk sticker, wording, kartu ucapan, dan packaging yang didesain dari ceritamu.</p>
+  </div></div>
+  <div class="sec-sm" style="padding-top:0"><div class="wrap">
+    <div class="rule1"><b>1</b><div><strong class="msg" style="font-size:22px;color:var(--ink)">One product per gift.</strong><p style="font-size:14px">Setiap order berisi satu barang utama sesuai tier. Untuk banyak orang, pakai Group Gifting.</p></div></div>
+    <div class="filters">
+      <button class="pill" data-f="all" aria-pressed="true">All</button><button class="pill" data-f="10" aria-pressed="false">Rp10K</button>
+      <button class="pill" data-f="15" aria-pressed="false">Rp15K</button><button class="pill" data-f="soon" aria-pressed="false">Coming soon</button>
+    </div>
+    <div id="shop-list"></div>
+    <p class="note">Visual produk adalah ilustrasi; foto asli menyusul. Harga dan pilihan produk masih tahap awal dan bisa berubah.</p>
+  </div></div>
+</section>
+
+<!-- ================= CREATE ================= -->
+<section data-page="create" hidden>
+  <div class="ph" style="padding-bottom:12px"><div class="wrap">
+    <p class="eye">Create your gift</p>
+    <h1>Made for <em>their</em> kind of special.</h1>
+    <p class="lede">Lima langkah singkat: pilih budget dan satu produk, ceritakan tentang penerima, cek pesanan, lalu kirim ke WhatsApp.</p>
+  </div></div>
+  <div class="sec-sm" style="padding-top:16px" id="create"><div class="wrap layout">
+    <form id="cf" novalidate>
+      <ol class="prog" id="prog"><li><span>Budget</span></li><li><span>Product</span></li><li><span>About them</span></li><li><span>Review</span></li><li><span>Send</span></li></ol>
+
+      <div class="panel" data-step="1">
+        <div class="stack"><p class="eye">Step 01</p><h2>Choose your <em>budget</em></h2></div>
+        <fieldset id="fs-tier"><legend class="sr" style="position:absolute;left:-9999px">Budget</legend><div class="opts t" id="opt-tier"></div><p class="e">Pilih salah satu budget.</p></fieldset>
+        <div class="pnav"><button type="button" class="btn pri" data-next>Next →</button></div>
+      </div>
+
+      <div class="panel" data-step="2" hidden>
+        <div class="stack"><p class="eye">Step 02</p><h2>Choose <em>one</em> product</h2><p class="lede">Satu produk per gift. Sticker, wording, kartu, dan packaging sudah termasuk.</p></div>
+        <fieldset id="fs-prod"><legend style="position:absolute;left:-9999px">Product</legend><div class="opts" id="opt-prod"></div><p class="e">Pilih satu produk.</p></fieldset>
+        <div class="pnav"><button type="button" class="btn link" data-back>← Back</button><button type="button" class="btn pri" data-next>Next →</button></div>
+      </div>
+
+      <div class="panel" data-step="3" hidden>
+        <div class="stack"><p class="eye">Step 03</p><h2>Tell us <em>about them</em></h2><p class="lede">Kolom bertanda <span class="req">*</span> wajib diisi.</p></div>
+        <div class="fs" style="border:0;padding-top:0"><h3>The basics</h3><div class="fg">
+          <div class="f"><label class="l" for="toName">Recipient's name <span class="req">*</span></label><input type="text" id="toName" maxlength="40" placeholder="e.g. Nadia"><p class="e">Tulis nama penerima.</p></div>
+          <div class="f"><label class="l" for="fromName">Your name <span class="req">*</span></label><input type="text" id="fromName" maxlength="60" placeholder="Nama kamu"><p class="e">Tulis nama kamu.</p></div>
+          <div class="f"><label class="l" for="occasion">Occasion <span class="req">*</span></label><select id="occasion"></select><p class="e">Pilih occasion.</p></div>
+          <div class="f"><label class="l" for="relationship">Relationship <span class="req">*</span></label><select id="relationship"></select><p class="e">Pilih hubungan.</p></div>
+        </div></div>
+        <div class="fs"><h3>Who they are</h3><div class="fg">
+          <div class="f full"><label class="l" for="personality">Personality <span class="req">*</span></label><p class="hint">Describe them in three words.</p><input type="text" id="personality" maxlength="120" placeholder="e.g. rame, perhatian, suka telat"><p class="e">Tulis minimal satu kata.</p></div>
+          <div class="f full"><label class="l" for="special">What makes this person special?</label><textarea id="special" maxlength="600"></textarea></div>
+          <div class="f"><label class="l" for="littleThing">What's one little thing that reminds you of them?</label><input type="text" id="littleThing" maxlength="160" placeholder="e.g. matcha latte"></div>
+          <div class="f"><label class="l" for="insideJoke">What's an inside joke only you two understand?</label><input type="text" id="insideJoke" maxlength="200"></div>
+        </div></div>
+        <div class="fs"><h3>Look &amp; feel</h3>
+          <fieldset><legend>Favorite colors</legend><div class="ch" id="opt-color"></div><input type="text" id="colorOther" maxlength="60" placeholder="Warna lain (opsional)" style="max-width:380px"></fieldset>
+          <fieldset id="fs-vibe"><legend>Aesthetic / vibe <span class="req">*</span></legend><div class="ch" id="opt-vibe"></div><p class="e">Pilih satu vibe.</p></fieldset>
+        </div>
+        <div class="fs"><h3>Words &amp; photo</h3>
+          <div class="f"><label class="l" for="wording">Preferred wording <span class="req">*</span></label><p class="hint">Nama, panggilan, atau kalimat untuk kartu dan sticker.</p>
+            <textarea id="wording" maxlength="400"></textarea>
+            <label class="chk"><input type="checkbox" id="letUs"> Biar DEARLY yang menulis / merapikan wording-nya</label><p class="e">Tulis wording atau centang opsi di atas.</p></div>
+          <div class="f"><span class="l" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700">Photo (optional)</span>
+            <div class="photo"><img id="pv" alt="Preview foto" hidden><div style="flex:1;min-width:200px;display:grid;gap:6px"><input type="file" id="photo" accept="image/jpeg,image/png,image/webp"><small id="pn" style="color:var(--muted)"></small><small id="pe" style="color:var(--err)"></small></div><button type="button" class="btn link" id="prm" hidden>Hapus</button></div>
+            <p class="note" style="font-size:13px">Foto hanya tampil sebagai preview, tidak terkirim otomatis. Kirim fotonya langsung di chat WhatsApp.</p></div>
+        </div>
+        <div class="fs"><h3>Timing &amp; notes</h3><div class="fg">
+          <div class="f"><label class="l" for="neededBy">Dibutuhkan tanggal</label><input type="date" id="neededBy"><small style="color:var(--muted)">Estimasi produksi: <span class="cfg-prod"></span>.</small></div>
+          <fieldset id="fs-del"><legend>Pickup / delivery <span class="req">*</span></legend><div class="ch">
+            <label class="c"><input type="radio" name="del" value="Pickup"><span>Pickup</span></label>
+            <label class="c"><input type="radio" name="del" value="Dikirim (ongkir terpisah)"><span>Delivery</span></label></div><p class="e">Pilih salah satu.</p></fieldset>
+          <div class="f full"><label class="l" for="notes">Additional notes</label><textarea id="notes" maxlength="600"></textarea></div>
+        </div></div>
+        <div class="pnav"><button type="button" class="btn link" data-back>← Back</button><button type="button" class="btn pri" data-next>Review your gift →</button></div>
+      </div>
+
+      <div class="panel" data-step="4" hidden>
+        <div class="stack"><p class="eye">Step 04</p><h2>Review <em>your gift</em></h2></div>
+        <div class="card" id="review"></div>
+        <div class="stack"><h3 style="font-size:28px">Additional options</h3><div class="stack" style="gap:10px" id="opt-add"></div></div>
+        <div class="side" style="position:static"><p class="eye">Estimated total</p><dl class="kv" id="lines"></dl><div class="tot"><span>Total</span><b id="rtot"></b></div><small style="color:var(--muted)">Estimasi. Harga final dan ongkir dikonfirmasi admin di WhatsApp.</small></div>
+        <div class="pnav"><button type="button" class="btn link" data-back>← Back</button><button type="button" class="btn pri" data-next>Continue →</button></div>
+      </div>
+
+      <div class="panel" data-step="5" hidden>
+        <div class="stack"><p class="eye">Step 05</p><h2>Send to <em>DEARLY</em></h2><p class="lede">Ini pesan yang akan kami terima di WhatsApp. Cek sekali lagi, lalu buka WhatsApp dan tekan kirim.</p></div>
+        <textarea id="wam" class="pre" readonly aria-label="Pesan order"></textarea>
+        <p class="warn" id="photoWarn" hidden>Jangan lupa kirim fotonya di chat yang sama.</p>
+        <p class="warn" id="numWarn" hidden>Nomor WhatsApp DEARLY belum diatur, jadi WhatsApp akan memintamu memilih chat.</p>
+        <div class="f" id="f-ok"><label class="chk"><input type="checkbox" id="ok"> Saya paham pesanan baru diproses setelah admin DEARLY membalas dan mengonfirmasi detail serta pembayaran di WhatsApp.</label><p class="e">Centang dulu untuk lanjut.</p></div>
+        <div class="row"><a class="btn pri" id="waBtn" href="#" target="_blank" rel="noopener" aria-disabled="true">Open WhatsApp →</a><button type="button" class="btn" id="copyBtn">Copy message</button></div>
+        <p class="st" id="sst"></p>
+        <div class="pnav"><button type="button" class="btn link" data-back>← Back</button><button type="button" class="btn link" id="reset">Start a new gift</button></div>
+      </div>
+      <p class="st" id="fst" style="color:var(--err)"></p>
+    </form>
+    <aside class="side">
+      <p class="eye">Your gift so far</p><div class="art" id="sideArt"></div>
+      <dl class="kv"><dt>Budget</dt><dd id="sTier">—</dd><dt>Product</dt><dd id="sProd">—</dd><dt>For</dt><dd id="sTo">—</dd></dl>
+      <div class="tot"><span>Estimated</span><b id="sTot">Rp0</b></div>
+    </aside>
+  </div></div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section data-page="how" hidden>
+  <div class="ph"><div class="wrap"><p class="eye">How it works</p><h1>Small gift. Personal story. <em>Unexpected feeling.</em></h1></div></div>
+  <div class="wrap">
+    <div class="how"><div class="art" data-art="tags" data-tone="blush"></div><div class="stack"><span class="n">01</span><p class="eye">Choose</p><h2>Choose your budget and <em>one</em> gift.</h2><p class="lede">Mulai dari Rp10K atau Rp15K. Setiap tier punya lima pilihan, kamu pilih satu.</p></div></div>
+    <div class="how"><div class="art" data-art="card" data-tone="cream"></div><div class="stack"><span class="n">02</span><p class="eye">Tell</p><h2>Tell us about the person <em>receiving it.</em></h2><p class="lede">Tiga kata tentang dia, apa yang bikin dia spesial, hal kecil yang mengingatkanmu padanya, dan inside joke kalian.</p></div></div>
+    <div class="how"><div class="art" data-art="stickers" data-tone="sage"></div><div class="stack"><span class="n">03</span><p class="eye">Create</p><h2>We turn their story into <em>design.</em></h2><p class="lede">Palet warna, tipografi, sticker, wording kartu, dan packaging, semua dibuat dari ceritamu.</p></div></div>
+    <div class="how"><div class="art" data-art="box" data-tone="rose"></div><div class="stack"><span class="n">04</span><p class="eye">Surprise</p><h2>A gift that feels <em>uniquely theirs.</em></h2><p class="lede">Kamu tahu isinya. Tampilannya jadi kejutan, untukmu dan untuknya.</p><div><button class="btn pri" data-go="create">Create your gift →</button></div></div></div>
+  </div>
+  <div class="sec soft"><div class="wrap stack">
+    <h2 class="h2">Custom, but <em>not</em> build-your-own.</h2>
+    <div class="cmp">
+      <div><p class="eye">Ready-made</p><h3>Fast &amp; cheap</h3><p>Produk sudah jadi. Mudah, tapi tidak personal.</p></div>
+      <div><p class="eye">Fully custom</p><h3>You design everything</h3><p>Sangat personal, tapi ribet, lebih mahal, dan tanpa kejutan.</p></div>
+      <div class="us"><p class="eye">DEARLY</p><h3>You choose, we create</h3><p>Kamu pilih 1 produk dan beri petunjuk. Kami terjemahkan jadi visual dan kata-kata.</p></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= STORIES ================= -->
+<section data-page="stories" hidden>
+  <div class="ph"><div class="wrap"><p class="eye">Gift stories</p><h1>Not just a gift. <em>A little piece of them.</em></h1>
+    <p class="note" style="margin-top:20px">Semua contoh di halaman ini adalah <strong>concept mockup</strong> buatan DEARLY untuk menunjukkan prosesnya, bukan pesanan atau testimoni customer asli.</p></div></div>
+  <div class="wrap" id="story-list"></div>
+</section>
+
+<!-- ================= GROUP ================= -->
+<section data-page="group" hidden>
+  <div class="ph"><div class="wrap"><p class="eye">Group gifting</p><h1>For the whole division, <em>one by one.</em></h1><p class="lede">Untuk organisasi, kepanitiaan, kelas, dan kelompok KKN. Satu tema, nama dan pesan untuk tiap orang.</p></div></div>
+  <div class="sec-sm" style="padding-top:0"><div class="wrap stack" style="gap:40px">
+    <div class="occ"><span>Farewell</span><span>Graduation</span><span>Demisioner</span><span>Committee appreciation</span><span>KKN</span><span>Internship</span><span>Class gifts</span></div>
+    <div class="ben">
+      <div><h3>One person coordinates</h3><p>Satu PIC mengisi semua detail.</p></div>
+      <div><h3>Same theme, personal touch</h3><p>Satu tema, tiap penerima dapat nama dan wording sendiri.</p></div>
+      <div><h3>Fits a shared budget</h3><p>Harga jelas per orang, mudah dibagi ke iuran.</p></div>
+      <div><h3>Mix if you need to</h3><p>Pengurus inti Rp15K, anggota Rp10K? Bisa diatur lewat chat.</p></div>
+    </div>
+    <div class="head" style="margin:0"><h2>Estimate your <em>budget</em></h2><p class="lede">Minimal <span class="cfg-min"></span> pcs. Belum termasuk ongkir.</p></div>
+    <form class="calc" id="gf" novalidate>
+      <div>
+        <div class="f"><label class="l" for="gOcc">Occasion</label><select id="gOcc"></select></div>
+        <div class="f"><label class="l" for="gOrg">Nama organisasi / grup</label><input type="text" id="gOrg" maxlength="80" placeholder="e.g. Divisi Acara BEM"></div>
+        <div class="f"><label class="l" for="gQty">Jumlah orang</label><div class="qty"><button type="button" id="gm" aria-label="Kurangi">−</button><input type="number" id="gQty" value="20"><button type="button" id="gp" aria-label="Tambah">+</button></div><input type="range" id="gRange" value="20" aria-label="Jumlah"></div>
+        <div class="f"><label class="l" for="gTier">Tier per orang</label><select id="gTier"></select></div>
+        <fieldset><legend>Add-on per orang</legend><div class="stack" style="gap:8px" id="gAdd"></div></fieldset>
+        <div class="f"><label class="l" for="gDate">Dibutuhkan tanggal</label><input type="date" id="gDate"></div>
+      </div>
+      <div class="out">
+        <p class="eye">Estimated total</p><p class="msg" style="color:var(--ivory)" id="gEq"></p><p class="total" id="gTot"></p><dl class="kv" id="gLines"></dl>
+        <div class="row"><a class="btn" id="gWa" href="#" target="_blank" rel="noopener">Ask on WhatsApp →</a></div>
+      </div>
+    </form>
+  </div></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section data-page="about" hidden>
+  <div class="ph"><div class="wrap"><p class="eye">About</p><h1>Because the little details <em>matter.</em></h1></div></div>
+  <div class="sec-sm" style="padding-top:0"><div class="wrap split">
+    <div class="art" data-art="box" data-tone="cream"></div>
+    <div class="stack">
+      <p class="brief">We believe meaningful gifts don't have to be expensive or complicated. Sometimes, the smallest details tell the biggest stories.</p>
+      <p class="lede">DEARLY exists to make personalized gifting easier, more accessible, and more thoughtful.</p>
+      <p class="lede">Our mission is to turn ordinary gifts into something that feels like it was made specifically for someone.</p>
+      <div class="row"><button class="btn pri" data-go="create">Create your gift →</button><button class="btn" data-go="how">How it works</button></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section data-page="faq" hidden>
+  <div class="ph"><div class="wrap"><p class="eye">FAQ &amp; contact</p><h1>Questions, <em>answered.</em></h1></div></div>
+  <div class="sec-sm" style="padding-top:0"><div class="wrap faqg">
+    <aside class="contact"><p class="eye">Contact</p><h2 style="font-size:36px">Talk to a <em>real person.</em></h2>
+      <p style="color:var(--muted);font-size:14px">Tanya, request khusus, group order, dan konfirmasi pesanan lewat WhatsApp.</p>
+      <a class="btn pri" id="faqWa" href="#" target="_blank" rel="noopener">Chat on WhatsApp →</a></aside>
+    <div id="faq-list"></div>
+  </div></div>
+</section>
+</main>
+
+<footer id="footer"></footer>
+
+<script src="js/components.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
