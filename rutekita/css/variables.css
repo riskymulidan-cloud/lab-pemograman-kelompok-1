@@ -1,0 +1,14 @@
+/* =========================================================
+   RUTEKITA – css/variables.css
+   Token desain situs: palet warna, radius, bayangan, dan
+   tipografi. Diambil dari desain asli (teal + oranye) dan
+   dipakai oleh semua halaman (index, itinerary, tips).
+   ========================================================= */
+:root{
+  --teal:#0e7c86; --teal-dark:#0a5560; --teal-light:#e6f6f7;
+  --orange:#ff7a3d; --orange-dark:#e9621f;
+  --ink:#16313a; --muted:#5c7580; --bg:#ffffff; --alt:#f3fafa;
+  --wa:#25d366;
+  --radius:18px; --shadow:0 10px 30px rgba(14,124,134,.12);
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
