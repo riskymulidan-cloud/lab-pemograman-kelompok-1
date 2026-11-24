@@ -213,3 +213,46 @@ input[type=range]{width:100%;accent-color:var(--orange);height:6px}
 /* Reveal */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
+
+/* Kerangka halaman dalam (itinerary.html, tips.html – halaman pasangan)
+   Pemakaian: <section class="page-hero"> di atas konten, lalu
+   <section class="section"> untuk isi halaman. */
+.page-hero{background:linear-gradient(135deg,var(--teal-dark),var(--teal) 55%,#2bb3b1);color:#fff;padding:64px 0;text-align:center}
+.page-hero .eyebrow{color:#ffc9a8}
+.page-hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:10px}
+.page-hero p{opacity:.93;max-width:620px;margin:0 auto}
+
+/* Responsif */
+@media (max-width:960px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-card{max-width:440px}
+  .dest-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .order-layout{grid-template-columns:1fr}
+  .calc-card{position:static}
+  .pricing,.testi-grid{grid-template-columns:1fr}
+  .price-card.featured{transform:none}
+  .footer-inner{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .burger{display:flex}
+  .nav-links{position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 5% 18px;box-shadow:0 12px 24px rgba(0,0,0,.1);display:none}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 0;border-bottom:1px solid #eef4f5}
+  .nav-links .btn{margin-top:12px;border:0;text-align:center}
+}
+@media (max-width:560px){
+  .section{padding:60px 0}
+  .grid-2,.steps{grid-template-columns:1fr}
+  .form-card,.calc-card{padding:22px 18px}
+  .hero{padding:48px 0 110px}
+  .timeline li{grid-template-columns:56px 1fr}
+  .page-hero{padding:48px 0}
+}
+
+/* Aksesibilitas: hormati preferensi gerak minimal */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .wa-float{animation:none}
+}
