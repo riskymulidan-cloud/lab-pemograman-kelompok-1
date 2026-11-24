@@ -1,0 +1,14 @@
+# Sistem operasi
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Dependensi dan log
+node_modules/
+*.log
+
+# Berkas lingkungan
+.env
