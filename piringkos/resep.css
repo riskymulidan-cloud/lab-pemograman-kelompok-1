@@ -1,0 +1,61 @@
+/* =========================================================
+   PIRING KOS · resep.css
+   Gaya khusus halaman resep (resep.html).
+   Memakai variabel dari variables.css dan kelas dasar dari style.css.
+   ========================================================= */
+.resep-section { padding-top: 24px; }
+
+/* ---------- Tab gaya diet ---------- */
+.diet-tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 24px; }
+.diet-tab {
+  background: #fff; border: 2px solid var(--line); border-radius: var(--radius); padding: 16px 14px;
+  text-align: left; cursor: pointer; transition: .15s; color: var(--ink);
+}
+.diet-tab:hover { border-color: var(--green); }
+.diet-tab .tab-icon { display: block; color: var(--green); margin-bottom: 6px; }
+.diet-tab .tab-icon .icon { width: 26px; height: 26px; }
+.diet-tab b { display: block; font-size: 1rem; }
+.diet-tab small { display: block; font-size: .8rem; opacity: .8; margin-top: 2px; }
+.diet-tab.active { background: var(--green); border-color: var(--green); color: #fff; box-shadow: var(--shadow-green); }
+.diet-tab.active .tab-icon { color: #fff; }
+
+/* ---------- Info diet ---------- */
+.diet-info {
+  background: var(--green-soft); border-radius: var(--radius); padding: 18px 22px; margin-bottom: 24px;
+  display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+}
+.diet-info p { max-width: 720px; }
+
+/* ---------- Kartu resep ---------- */
+.recipe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.recipe {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  cursor: pointer; transition: .15s; display: flex; flex-direction: column;
+}
+.recipe:hover, .recipe:focus-visible { transform: translateY(-4px); box-shadow: var(--shadow); outline: none; }
+.recipe-top {
+  height: 110px; display: grid; place-items: center; color: var(--green);
+  background: linear-gradient(135deg, var(--cream-2), var(--orange-soft));
+}
+.recipe-top .icon { width: 48px; height: 48px; opacity: .8; }
+.recipe-body { padding: 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.recipe-body h3 { font-size: 1.06rem; }
+.recipe-body .more { margin-top: auto; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge-green { background: var(--green); }
+.tag .icon { width: 14px; height: 14px; }
+
+/* ---------- Detail resep di modal ---------- */
+#recipeModal h4 { margin-top: 18px; color: var(--green-dark); }
+.resep-list { margin: 8px 0 16px 20px; }
+.resep-list li { margin-bottom: 6px; }
+
+/* ---------- Responsif ---------- */
+@media (max-width: 900px) {
+  .diet-tabs { grid-template-columns: repeat(3, 1fr); }
+  .recipe-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .diet-tabs { grid-template-columns: repeat(2, 1fr); }
+  .recipe-grid { grid-template-columns: 1fr; }
+}
