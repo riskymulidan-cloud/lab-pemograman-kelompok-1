@@ -82,3 +82,40 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--green); bor
   background: var(--orange-soft); border-left: 5px solid var(--orange); border-radius: 14px;
   padding: 18px 22px; font-size: .93rem; margin-top: 34px; max-width: 780px;
 }
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky; top: 0; z-index: 50; background: rgba(255, 248, 236, .94);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: var(--nav-height); }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.25rem; text-decoration: none; color: var(--green-dark); }
+.logo-plate {
+  width: 34px; height: 34px; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px var(--line);
+  background: conic-gradient(var(--green) 0 50%, var(--orange) 50% 75%, var(--yellow) 75% 100%);
+}
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a:not(.btn) { text-decoration: none; font-weight: 600; color: var(--muted); }
+.nav-links a:not(.btn):hover, .nav-links a.active { color: var(--green); }
+.nav-links a.active { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+.nav-cta { padding: 9px 18px; }
+.burger { display: none; background: none; border: none; cursor: pointer; color: var(--green-dark); }
+.burger .icon { width: 28px; height: 28px; }
+
+/* ---------- Footer ---------- */
+.footer { background: var(--green-dark); color: #d9eadf; padding: 44px 0; font-size: .9rem; }
+.footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: 28px; }
+.footer h4 { color: #fff; margin-bottom: 10px; }
+.footer ul { list-style: none; display: grid; gap: 6px; }
+.footer a { text-decoration: none; }
+.footer a:hover { color: #fff; }
+.footer p { margin-top: 6px; }
+.logo.light { color: #fff; }
+
+/* ---------- Tombol WhatsApp melayang ---------- */
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60; background: var(--wa); color: #fff;
+  border-radius: var(--radius-pill); padding: 13px 18px; font-weight: 700; text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .2); display: flex; align-items: center; gap: 8px;
+}
+.wa-float .icon { width: 22px; height: 22px; }
