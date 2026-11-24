@@ -234,3 +234,50 @@ details p { margin-top: 10px; color: var(--muted); }
 .rec .icon-box { background: rgba(255, 255, 255, .18); color: #fff; }
 .rec .btn { background: #fff; color: var(--green-dark); }
 .warn { background: var(--orange-soft); border-left: 5px solid var(--orange); border-radius: 14px; padding: 14px 18px; font-size: .92rem; }
+
+/* ---------- Paket harga ---------- */
+.paket-section { padding-top: 24px; }
+.paket-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.paket {
+  background: #fff; border: 2px solid var(--line); border-radius: var(--radius-lg); padding: 24px;
+  display: flex; flex-direction: column; position: relative;
+}
+.paket.best { border-color: var(--green); box-shadow: 0 18px 40px rgba(47, 125, 79, .18); }
+.ribbon {
+  position: absolute; top: -14px; left: 24px; background: var(--orange); color: #fff; font-size: .78rem;
+  font-weight: 800; padding: 5px 12px; border-radius: var(--radius-pill);
+}
+.paket h3 { font-size: 1.15rem; margin-bottom: 4px; }
+.paket .sub { color: var(--muted); font-size: .9rem; margin-bottom: 16px; min-height: 2.9em; }
+.harga { white-space: nowrap; font-size: 1.8rem; font-weight: 800; color: var(--green-dark); }
+.harga small { font-size: .85rem; font-weight: 600; color: var(--muted); }
+.harga-note { font-size: .85rem; color: var(--orange); font-weight: 700; min-height: 1.4em; margin-bottom: 12px; }
+.checklist { list-style: none; margin: 6px 0 24px; display: grid; gap: 9px; flex: 1; }
+.checklist li { padding-left: 28px; position: relative; font-size: .93rem; }
+.checklist li::before {
+  content: ""; position: absolute; left: 0; top: 2px; width: 20px; height: 20px; border-radius: 50%; background: var(--green-soft);
+}
+.checklist li::after {
+  content: ""; position: absolute; left: 7px; top: 6px; width: 5px; height: 9px;
+  border: solid var(--green); border-width: 0 2.5px 2.5px 0; transform: rotate(45deg);
+}
+
+/* ---------- Preview menu ---------- */
+.preview { margin-top: 46px; background: #fff; border-radius: var(--radius-lg); padding: 28px; border: 1px solid var(--line); }
+.preview-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.preview-head select { width: auto; background: var(--cream); }
+.table-scroll { overflow-x: auto; }
+.menu-table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+.menu-table th, .menu-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.menu-table th { background: var(--cream); font-weight: 700; color: var(--green-dark); }
+.menu-table td:first-child { font-weight: 700; white-space: nowrap; }
+.blur-zone { position: relative; }
+.blur-zone tbody.locked { filter: blur(5px); user-select: none; pointer-events: none; }
+.lock-over {
+  position: absolute; inset: auto 0 0 0; top: var(--lock-top, 52px); display: grid; place-items: center; text-align: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, .85));
+}
+.lock-over > div {
+  background: #fff; padding: 18px 22px; border-radius: 16px; box-shadow: var(--shadow); max-width: 340px;
+  display: grid; justify-items: center; gap: 8px;
+}

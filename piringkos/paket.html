@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paket Menu Diet · Piring Kos</title>
+  <meta name="description" content="Menu diet siap pakai untuk anak kos: 1 hari Rp5 ribu, 1 minggu Rp12 ribu, 4 minggu Rp40 ribu.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">Paket menu</span>
+        <h1>Nggak mau mikir mau masak apa?</h1>
+        <p class="lead">Ambil menu yang sudah jadi, lengkap dengan daftar belanja dan perkiraan total biayanya. Atau minta dibuatkan khusus sesuai budget-mu.</p>
+      </div>
+    </section>
+
+    <section class="paket-section">
+      <div class="wrap">
+        <div class="paket-grid">
+          <div class="paket">
+            <h3>Menu Siap 1 Hari</h3>
+            <p class="sub">Coba dulu menu satu hari sebelum langganan.</p>
+            <div class="harga">Rp5.000 <small>/ hari</small></div>
+            <div class="harga-note">&nbsp;</div>
+            <ul class="checklist">
+              <li>Menu 1 hari: sarapan, makan siang, makan malam</li>
+              <li>Pilih sendiri harinya (Hari 1–7)</li>
+              <li>Perkiraan biaya belanja sehari</li>
+              <li>Langsung terbuka setelah pembayaran</li>
+            </ul>
+            <button class="btn btn-ghost btn-block" type="button" data-buy="hari1">Pilih Paket Ini</button>
+          </div>
+
+          <div class="paket">
+            <h3>Menu Siap 1 Minggu</h3>
+            <p class="sub">Menu 7 hari untuk gaya diet pilihanmu.</p>
+            <div class="harga">Rp12.000 <small>/ minggu</small></div>
+            <div class="harga-note">&nbsp;</div>
+            <ul class="checklist">
+              <li>Menu 7 hari: sarapan, makan siang, makan malam</li>
+              <li>Daftar belanja dan perkiraan total biaya</li>
+              <li>Tips meal prep ala anak kos</li>
+              <li>Langsung terbuka setelah pembayaran</li>
+            </ul>
+            <button class="btn btn-ghost btn-block" type="button" data-buy="minggu1">Pilih Paket Ini</button>
+          </div>
+
+          <div class="paket best">
+            <span class="ribbon">Paling hemat</span>
+            <h3>Menu Siap 4 Minggu</h3>
+            <p class="sub">Biar dietnya konsisten sebulan penuh.</p>
+            <div class="harga">Rp40.000 <small>/ 4 minggu</small></div>
+            <div class="harga-note">Hemat Rp8.000 dibanding beli satuan</div>
+            <ul class="checklist">
+              <li>Semua isi paket 1 minggu</li>
+              <li>Menu minggu 2–4 dikirim tiap minggu via WhatsApp</li>
+              <li>Boleh ganti gaya diet tiap minggu</li>
+              <li>Konsultasi menu via WhatsApp</li>
+            </ul>
+            <button class="btn btn-primary btn-block" type="button" data-buy="minggu4">Pilih Paket Ini</button>
+          </div>
+
+          <div class="paket">
+            <h3>Menu Custom</h3>
+            <p class="sub">Dibuatkan khusus sesuai budget, alat masak, dan pantanganmu.</p>
+            <div class="harga">Rp12.000 <small>/ minggu</small></div>
+            <div class="harga-note">&nbsp;</div>
+            <ul class="checklist">
+              <li>Menu 7 hari sesuai budget mingguanmu</li>
+              <li>Menyesuaikan alat masak di kos</li>
+              <li>Bebas alergi dan bahan yang tidak kamu suka</li>
+              <li>Dikirim maksimal 1×24 jam, 1x revisi gratis</li>
+            </ul>
+            <a href="custom.html" class="btn btn-orange btn-block">Isi Form Custom</a>
+          </div>
+        </div>
+
+        <!-- PREVIEW MENU -->
+        <div class="preview">
+          <div class="preview-head">
+            <div>
+              <h3>Intip isi Menu Siap</h3>
+              <p class="muted">Hari 1 bisa kamu lihat gratis. Hari 2–7 terbuka setelah membeli paket.</p>
+            </div>
+            <select id="previewDiet" aria-label="Pilih gaya diet untuk preview"></select>
+          </div>
+          <div class="table-scroll blur-zone" id="previewZone">
+            <table class="menu-table">
+              <thead><tr><th>Hari</th><th>Sarapan</th><th>Makan Siang</th><th>Makan Malam</th></tr></thead>
+              <tbody id="previewOpen"></tbody>
+              <tbody id="previewLocked" class="locked"></tbody>
+            </table>
+            <div class="lock-over" id="lockOver">
+              <div>
+                <span class="icon-box"><i data-icon="lock"></i></span>
+                <b>Hari 2–7 masih terkunci</b>
+                <p class="muted">Buka semua menu dan daftar belanjanya cuma Rp12 ribu, atau mulai Rp5 ribu per hari.</p>
+                <button class="btn btn-primary" type="button" data-buy="minggu1">Buka Menu Lengkap</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/paket.js"></script>
+</body>
+</html>
