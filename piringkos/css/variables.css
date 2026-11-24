@@ -1,0 +1,44 @@
+/* =========================================================
+   PIRING KOS · variables.css
+   Variabel desain: warna, huruf, jarak, sudut, bayangan.
+   Ubah di sini supaya seluruh halaman ikut berubah.
+   ========================================================= */
+:root {
+  /* Warna utama */
+  --green: #2f7d4f;
+  --green-dark: #1f5a37;
+  --green-soft: #e3f1e7;
+  --orange: #ee8a3c;
+  --orange-soft: #fde7d3;
+  --yellow: #f4c95d;
+
+  /* Latar dan teks */
+  --cream: #fff8ec;
+  --cream-2: #fbefd9;
+  --white: #ffffff;
+  --ink: #22301f;
+  --muted: #5f6b5c;
+  --line: #e7dcc7;
+  --wa: #25d366;
+
+  /* Warna piring Isi Piringku */
+  --plate-sayur: #7cc28f;
+  --plate-buah: #a7d98a;
+  --plate-karbo: #f4c95d;
+  --plate-lauk: #ee8a3c;
+
+  /* Huruf */
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Ukuran dan jarak */
+  --container: 1120px;
+  --nav-height: 66px;
+  --section-pad: 72px;
+  --radius: 18px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* Bayangan */
+  --shadow: 0 10px 30px rgba(47, 77, 47, 0.1);
+  --shadow-green: 0 8px 20px rgba(47, 125, 79, 0.3);
+}
