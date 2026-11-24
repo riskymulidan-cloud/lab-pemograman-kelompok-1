@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasa Bikin Itinerary – Rencana Liburan Sesuai Budget Kamu</title>
+  <meta name="description" content="Jasa Bikin Itinerary: kami susun itinerary perjalanan lengkap sesuai budget, tujuan, durasi, dan jumlah orang. Pesan mudah, hasil rapi dalam bentuk PDF.">
+  <meta name="keywords" content="jasa itinerary, bikin itinerary, itinerary liburan, rencana perjalanan, itinerary budget, jasa liburan">
+  <meta name="theme-color" content="#0e7c86">
+  <meta property="og:title" content="Jasa Bikin Itinerary – Liburan Sesuai Budget">
+  <meta property="og:description" content="Atur budget, tujuan, durasi, dan tanggal. Kami yang susun itinerary-nya.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR & FOOTER dirender oleh js/components.js (dipakai semua halaman) -->
+  <div id="site-header"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="badge"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2.5 11 13"/><path d="M21.5 2.5 14.5 21l-3.5-8-8-3.5z"/></svg> Liburan tanpa ribet</span>
+          <h1>Liburan Impian, <span class="hl">Itinerary Sesuai Budget</span> Kamu</h1>
+          <p>Tentukan budget, tujuan, durasi, jumlah orang, dan tanggal. Kami susun itinerary lengkap per hari: jadwal, estimasi biaya, sampai tips lokal. Kamu tinggal berangkat.</p>
+          <div class="hero-cta">
+            <a href="#pesan" class="btn btn-orange">Pesan Itinerary</a>
+            <a href="#contoh" class="btn btn-ghost">Lihat Contoh</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>100%</strong><span>Sesuai budget</span></li>
+            <li><strong>1–3 hari</strong><span>Estimasi selesai</span></li>
+            <li><strong>PDF</strong><span>Mudah dibawa</span></li>
+          </ul>
+        </div>
+        <div class="hero-card reveal">
+          <div class="mini-card">
+            <div class="mini-head"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21c-4-4.2-6-7.4-6-10a6 6 0 1 1 12 0c0 2.6-2 5.8-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Yogyakarta · 3 Hari 2 Malam</div>
+            <div class="mini-row"><span>2 orang</span><span>Rp 3.000.000</span></div>
+            <div class="mini-bar"><i style="width:30%"></i><i style="width:25%"></i><i style="width:20%"></i><i style="width:15%"></i><i style="width:10%"></i></div>
+            <ul class="mini-list">
+              <li><b>Hari 1</b> Malioboro · Keraton · Gudeg Yu Djum</li>
+              <li><b>Hari 2</b> Borobudur · Sunrise Punthuk Setumbu</li>
+              <li><b>Hari 3</b> Tamansari · Oleh-oleh Bakpia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,30 L1440,80 L0,80 Z" fill="#ffffff"/></svg>
+    </section>
+
+    <!-- DESTINASI POPULER -->
+    <section class="section" id="destinasi">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Destinasi Populer</span>
+          <h2>Mau ke mana? Klik untuk langsung isi form</h2>
+          <p>Pilih salah satu, tujuan otomatis terisi di form pemesanan.</p>
+        </div>
+        <div class="dest-grid">
+          <button class="dest-card reveal" data-dest="Bali" style="--g1:#0e7c86;--g2:#34c3b0"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="7" r="3.4"/><path d="M3 16.5c2-2 4-2 6 0s4 2 6 0 3-2 6 0"/></svg></span><strong>Bali</strong><small>Pantai, budaya, kuliner</small></button>
+          <button class="dest-card reveal" data-dest="Yogyakarta" style="--g1:#b5651d;--g2:#f0a35e"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20h17"/><path d="M6 20v-4.5h12V20"/><path d="M8.5 15.5V12h7v3.5"/><path d="M10.5 12V8.5h3V12"/></svg></span><strong>Yogyakarta</strong><small>Budaya, sejarah, kuliner</small></button>
+          <button class="dest-card reveal" data-dest="Labuan Bajo" style="--g1:#1d4e89;--g2:#4aa3df"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15.5h13.5L15.5 20h-9z"/><path d="M10.8 15.5V4.5l6 9.5h-6"/><path d="M10.8 8.5h4"/></svg></span><strong>Labuan Bajo</strong><small>Pulau, snorkeling, komodo</small></button>
+          <button class="dest-card reveal" data-dest="Lombok" style="--g1:#2d6a4f;--g2:#74c69d"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 13c2-2 4-2 6 0s4 2 6 0 3-2 6 0"/><path d="M5 17.5c1.6-1.6 3.2-1.6 4.8 0s3.2 1.6 4.8 0 3.2-1.6 4.8 0"/></svg></span><strong>Lombok</strong><small>Gili, Rinjani, pantai</small></button>
+          <button class="dest-card reveal" data-dest="Bandung" style="--g1:#7b2cbf;--g2:#c77dff"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 8.5h11l1 11h-13z"/><path d="M9 11.5V7a3 3 0 0 1 6 0v4.5"/></svg></span><strong>Bandung</strong><small>Alam, cafe, belanja</small></button>
+          <button class="dest-card reveal" data-dest="Malang & Bromo" style="--g1:#c1121f;--g2:#ff8a5c"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19h15"/><path d="M6.5 19l4-9h3l4 9"/><path d="M10.2 7V5.2M13.8 7V5.2M12 6.2V4"/></svg></span><strong>Malang &amp; Bromo</strong><small>Gunung, sunrise, apel</small></button>
+          <button class="dest-card reveal" data-dest="Raja Ampat" style="--g1:#005f73;--g2:#0a9396"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12c2.8-3.8 7.2-3.8 10 0-2.8 3.8-7.2 3.8-10 0z"/><path d="M14.5 12l4-2.5v5z"/><circle cx="7.5" cy="11" r=".9" fill="currentColor" stroke="none"/></svg></span><strong>Raja Ampat</strong><small>Diving, laut biru</small></button>
+          <button class="dest-card reveal" data-dest="" style="--g1:#555;--g2:#999"><span class="dest-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4-4.2-6-7.4-6-10a6 6 0 1 1 12 0c0 2.6-2 5.8-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg></span><strong>Tujuan Lain</strong><small>Ketik sendiri di form</small></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARA KERJA -->
+    <section class="section alt" id="cara-kerja">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cara Kerja</span>
+          <h2>Pesan itinerary dalam 4 langkah</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><div class="step-num">1</div><h3>Isi Form</h3><p>Masukkan tujuan, tanggal, jumlah orang, budget, dan gaya liburan.</p></div>
+          <div class="step reveal"><div class="step-num">2</div><h3>Konfirmasi via WhatsApp</h3><p>Data terkirim ke kami, lalu kita diskusi singkat dan sepakati paket serta harga.</p></div>
+          <div class="step reveal"><div class="step-num">3</div><h3>Itinerary Disusun</h3><p>Kami rancang jadwal harian dan rincian biaya sesuai budget kamu.</p></div>
+          <div class="step reveal"><div class="step-num">4</div><h3>Terima PDF</h3><p>Itinerary dikirim dalam bentuk PDF rapi. Revisi sesuai paket.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM PEMESANAN -->
+    <section class="section" id="pesan">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Form Pemesanan</span>
+          <h2>Ceritakan rencana liburanmu</h2>
+          <p>Semakin lengkap datanya, semakin pas itinerary-nya. Kalkulator di samping akan menghitung estimasi budget secara otomatis.</p>
+        </div>
+
+        <div class="order-layout">
+          <form id="orderForm" name="pesan-itinerary" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" class="form-card reveal" novalidate>
+            <input type="hidden" name="form-name" value="pesan-itinerary">
+            <p class="hidden-field" aria-hidden="true"><label>Jangan diisi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <input type="hidden" name="durasi" id="f-durasi-hidden">
+            <input type="hidden" name="budget_per_orang_per_hari" id="f-bpoh-hidden">
+
+            <h3 class="form-title">1. Data Kamu</h3>
+            <div class="grid-2">
+              <div class="field">
+                <label for="nama">Nama lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Contoh: Rafi Favian" required>
+              </div>
+              <div class="field">
+                <label for="wa">Nomor WhatsApp</label>
+                <input type="tel" id="wa" name="whatsapp" placeholder="Contoh: 08123456789" inputmode="tel" required>
+              </div>
+            </div>
+
+            <h3 class="form-title">2. Rencana Perjalanan</h3>
+            <div class="field">
+              <label for="tujuan">Tujuan wisata</label>
+              <input type="text" id="tujuan" name="tujuan" list="listTujuan" placeholder="Ketik atau pilih destinasi" required>
+              <datalist id="listTujuan">
+                <option value="Bali"><option value="Yogyakarta"><option value="Labuan Bajo"><option value="Lombok">
+                <option value="Bandung"><option value="Malang & Bromo"><option value="Raja Ampat"><option value="Jakarta">
+                <option value="Surabaya"><option value="Medan & Danau Toba"><option value="Bukittinggi"><option value="Makassar & Toraja">
+              </datalist>
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="berangkat">Tanggal berangkat</label>
+                <input type="date" id="berangkat" name="tanggal_berangkat" required>
+              </div>
+              <div class="field">
+                <label for="pulang">Tanggal pulang</label>
+                <input type="date" id="pulang" name="tanggal_pulang" required>
+              </div>
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="orang">Jumlah orang</label>
+                <div class="stepper">
+                  <button type="button" id="minus" aria-label="Kurangi">−</button>
+                  <input type="number" id="orang" name="jumlah_orang" min="1" max="50" value="2" required>
+                  <button type="button" id="plus" aria-label="Tambah">+</button>
+                </div>
+              </div>
+              <div class="field">
+                <label for="budgetNum">Budget total (Rp)</label>
+                <input type="number" id="budgetNum" name="budget_total" min="100000" step="50000" value="3000000" required>
+              </div>
+            </div>
+            <div class="field">
+              <input type="range" id="budgetRange" min="500000" max="50000000" step="100000" value="3000000" aria-label="Geser budget total">
+              <div class="range-labels"><span>Rp 500 rb</span><span>Rp 50 jt</span></div>
+            </div>
+
+            <h3 class="form-title">3. Gaya Liburan</h3>
+            <div class="chips" id="chips">
+              <label class="chip"><input type="checkbox" name="gaya" value="Santai"><span>Santai</span></label>
+              <label class="chip"><input type="checkbox" name="gaya" value="Petualangan"><span>Petualangan</span></label>
+              <label class="chip"><input type="checkbox" name="gaya" value="Kuliner"><span>Kuliner</span></label>
+              <label class="chip"><input type="checkbox" name="gaya" value="Budaya & Sejarah"><span>Budaya &amp; Sejarah</span></label>
+              <label class="chip"><input type="checkbox" name="gaya" value="Alam & Pantai"><span>Alam &amp; Pantai</span></label>
+              <label class="chip"><input type="checkbox" name="gaya" value="Belanja"><span>Belanja</span></label>
+              <label class="chip"><input type="checkbox" name="gaya" value="Foto & Hunting Spot"><span>Foto &amp; Hunting Spot</span></label>
+              <label class="chip"><input type="checkbox" name="gaya" value="Keluarga"><span>Keluarga</span></label>
+            </div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="akomodasi">Preferensi penginapan</label>
+                <select id="akomodasi" name="akomodasi">
+                  <option value="hemat">Hemat (hostel / guest house)</option>
+                  <option value="standar" selected>Standar (hotel bintang 2–3)</option>
+                  <option value="nyaman">Nyaman (hotel bintang 4+ / villa)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="transport">Transportasi utama</label>
+                <select id="transport" name="transportasi">
+                  <option>Pesawat</option>
+                  <option>Kereta</option>
+                  <option>Bus / Travel</option>
+                  <option>Kendaraan pribadi / sewa</option>
+                  <option selected>Belum tahu, sarankan saja</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="paket">Paket yang diminati</label>
+              <select id="paket" name="paket">
+                <option value="Basic">Basic</option>
+                <option value="Standar" selected>Standar</option>
+                <option value="Premium">Premium</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="catatan">Catatan khusus (opsional)</label>
+              <textarea id="catatan" name="catatan" rows="3" placeholder="Contoh: ada anak kecil, alergi seafood, tidak suka jalan jauh, ingin rayakan ulang tahun"></textarea>
+            </div>
+
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <button type="submit" class="btn btn-orange btn-block" id="submitBtn">Kirim Pesanan & Lanjut ke WhatsApp</button>
+            <p class="form-note">Datamu hanya dipakai untuk menyusun itinerary.</p>
+          </form>
+
+          <!-- KALKULATOR -->
+          <aside class="calc-card reveal" aria-live="polite">
+            <h3>Kalkulator Budget</h3>
+            <div class="calc-top">
+              <div><small>Durasi</small><strong id="c-durasi">–</strong></div>
+              <div><small>Total budget</small><strong id="c-total">–</strong></div>
+            </div>
+            <div class="calc-top">
+              <div><small>Per orang</small><strong id="c-perorang">–</strong></div>
+              <div><small>Per orang / hari</small><strong id="c-perhari">–</strong></div>
+            </div>
+            <div class="level" id="c-level">Isi tanggal untuk melihat level budget</div>
+
+            <h4>Estimasi pembagian budget</h4>
+            <ul class="breakdown" id="breakdown"></ul>
+            <p class="calc-note">Ini estimasi awal. Angka final disesuaikan saat itinerary disusun.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAKET HARGA -->
+    <section class="section alt" id="paket">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Paket Harga</span>
+          <h2>Pilih paket yang pas</h2>
+          <p>Harga di bawah adalah contoh, bisa disesuaikan.</p>
+        </div>
+        <div class="pricing">
+          <div class="price-card reveal">
+            <h3>Basic</h3>
+            <div class="price">Rp 49.000</div>
+            <ul>
+              <li>Itinerary 1–3 hari</li>
+              <li>Jadwal harian ringkas</li>
+              <li>Estimasi biaya total</li>
+              <li>1x revisi kecil</li>
+            </ul>
+            <a href="#pesan" class="btn btn-ghost-dark btn-block" data-pick="Basic">Pilih Basic</a>
+          </div>
+          <div class="price-card featured reveal">
+            <div class="ribbon">Paling Laris</div>
+            <h3>Standar</h3>
+            <div class="price">Rp 99.000</div>
+            <ul>
+              <li>Itinerary 1–5 hari</li>
+              <li>Jadwal per jam + peta lokasi</li>
+              <li>Rincian biaya per kategori</li>
+              <li>Rekomendasi tempat makan</li>
+              <li>2x revisi</li>
+            </ul>
+            <a href="#pesan" class="btn btn-orange btn-block" data-pick="Standar">Pilih Standar</a>
+          </div>
+          <div class="price-card reveal">
+            <h3>Premium</h3>
+            <div class="price">Rp 199.000</div>
+            <ul>
+              <li>Itinerary hingga 10 hari</li>
+              <li>Semua fitur Standar</li>
+              <li>Rencana cadangan (hujan/tutup)</li>
+              <li>Tips lokal & checklist bawaan</li>
+              <li>Revisi tanpa batas selama 7 hari</li>
+            </ul>
+            <a href="#pesan" class="btn btn-ghost-dark btn-block" data-pick="Premium">Pilih Premium</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTOH ITINERARY -->
+    <section class="section" id="contoh">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contoh Hasil</span>
+          <h2>Seperti ini itinerary yang kamu terima</h2>
+          <p>Contoh: Yogyakarta, 3 hari 2 malam, 2 orang, budget Rp 3.000.000.</p>
+        </div>
+        <div class="sample reveal">
+          <div class="tabs" role="tablist">
+            <button class="tab active" data-tab="d1" role="tab">Hari 1</button>
+            <button class="tab" data-tab="d2" role="tab">Hari 2</button>
+            <button class="tab" data-tab="d3" role="tab">Hari 3</button>
+          </div>
+          <div class="tab-panel active" id="d1">
+            <h4>Kota Tua & Kuliner</h4>
+            <ul class="timeline">
+              <li><time>08.00</time><div><b>Tiba & check-in</b><span>Titip tas, sarapan dekat penginapan</span></div></li>
+              <li><time>10.00</time><div><b>Keraton Yogyakarta</b><span>Tiket ± Rp 15.000/orang</span></div></li>
+              <li><time>13.00</time><div><b>Makan siang gudeg</b><span>± Rp 30.000/orang</span></div></li>
+              <li><time>16.00</time><div><b>Tamansari</b><span>Foto & jelajah lorong bawah tanah</span></div></li>
+              <li><time>19.00</time><div><b>Malioboro</b><span>Jajan malam & belanja suvenir</span></div></li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="d2">
+            <h4>Borobudur & Sunrise</h4>
+            <ul class="timeline">
+              <li><time>04.30</time><div><b>Punthuk Setumbu</b><span>Sunrise view Borobudur</span></div></li>
+              <li><time>08.00</time><div><b>Candi Borobudur</b><span>Pilih tiket sesuai ketentuan terbaru</span></div></li>
+              <li><time>12.00</time><div><b>Makan siang</b><span>Warung lokal sekitar Magelang</span></div></li>
+              <li><time>15.00</time><div><b>Kembali ke kota</b><span>Istirahat & santai di penginapan</span></div></li>
+              <li><time>19.00</time><div><b>Angkringan Tugu</b><span>Kopi joss khas Jogja</span></div></li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="d3">
+            <h4>Oleh-oleh & Pulang</h4>
+            <ul class="timeline">
+              <li><time>08.00</time><div><b>Check-out & sarapan</b><span>Bubur / soto di dekat penginapan</span></div></li>
+              <li><time>10.00</time><div><b>Pasar Beringharjo</b><span>Batik & oleh-oleh murah</span></div></li>
+              <li><time>12.00</time><div><b>Bakpia Pathok</b><span>Beli oleh-oleh khas</span></div></li>
+              <li><time>14.00</time><div><b>Menuju stasiun / bandara</b><span>Pulang dengan aman</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="section alt" id="testimoni">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimoni</span>
+          <h2>Kata mereka tentang itinerary kami</h2>
+          <p class="muted">(Contoh testimoni, ganti dengan testimoni asli customer.)</p>
+        </div>
+        <div class="testi-grid">
+          <figure class="testi reveal"><div class="stars">★★★★★</div><blockquote>Budget 2 juta tapi bisa keliling 3 hari di Jogja. Jadwalnya rapi banget!</blockquote><figcaption>Nama Customer 1 · Semarang</figcaption></figure>
+          <figure class="testi reveal"><div class="stars">★★★★★</div><blockquote>Nggak perlu pusing cari info sendiri. Tinggal ikuti PDF-nya.</blockquote><figcaption>Nama Customer 2 · Jakarta</figcaption></figure>
+          <figure class="testi reveal"><div class="stars">★★★★★</div><blockquote>Rekomendasi tempat makannya enak dan sesuai kantong.</blockquote><figcaption>Nama Customer 3 · Surabaya</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Pertanyaan yang sering muncul</h2>
+        </div>
+        <div class="faq reveal">
+          <details><summary>Apakah harga itinerary sudah termasuk tiket dan hotel?</summary><p>Belum. Kamu membayar jasa penyusunan itinerary. Biaya tiket, hotel, dan lainnya dibayar langsung oleh kamu sesuai estimasi di itinerary.</p></details>
+          <details><summary>Berapa lama itinerary selesai?</summary><p>Rata-rata 1–3 hari setelah data lengkap dan paket disepakati. Untuk perjalanan panjang bisa sedikit lebih lama.</p></details>
+          <details><summary>Bagaimana kalau budget saya kecil?</summary><p>Tidak masalah. Itinerary disusun menyesuaikan budget, misalnya dengan memilih penginapan hemat, transportasi umum, dan wisata gratis atau murah.</p></details>
+          <details><summary>Bisa revisi?</summary><p>Bisa, jumlah revisi mengikuti paket yang dipilih.</p></details>
+          <details><summary>Bagaimana cara pembayaran?</summary><p>Setelah kita sepakat paket dan harga di WhatsApp, kamu akan menerima informasi pembayaran. Itinerary dikirim setelah pembayaran dikonfirmasi.</p></details>
+          <details><summary>Itinerary dikirim dalam bentuk apa?</summary><p>File PDF yang bisa disimpan di HP dan dibuka tanpa internet.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container reveal">
+        <h2>Siap berangkat? Serahkan rencananya ke kami.</h2>
+        <a href="#pesan" class="btn btn-orange">Mulai Pesan Itinerary</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER dirender oleh js/components.js -->
+  <div id="site-footer"></div>
+
+  <!-- MODAL SUKSES -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box">
+      <div class="modal-icon"><svg viewBox="0 0 24 24" width="64" height="64" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#0e7c86"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3>Pesanan tersimpan!</h3>
+      <p>Kamu akan diarahkan ke WhatsApp untuk konfirmasi. Jika tidak terbuka otomatis, tekan tombol di bawah.</p>
+      <a id="waContinue" class="btn btn-orange btn-block" href="#" target="_blank" rel="noopener">Lanjut ke WhatsApp</a>
+      <button class="btn btn-ghost-dark btn-block" id="closeModal" type="button">Tutup</button>
+    </div>
+  </div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
