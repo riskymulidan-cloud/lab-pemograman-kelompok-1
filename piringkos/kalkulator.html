@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI &amp; Kalori · Piring Kos</title>
+  <meta name="description" content="Cek BMI, kebutuhan kalori harian, protein, dan air minum, plus saran gaya diet yang cocok.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">Kalkulator sehat · gratis</span>
+        <h1>Cek BMI dan kebutuhan kalorimu</h1>
+        <p class="lead">Isi data di bawah untuk tahu BMI, kebutuhan kalori harian, protein, dan air minum. Hasilnya juga memberi saran gaya diet yang cocok buat kamu.</p>
+      </div>
+    </section>
+
+    <section class="calc-section">
+      <div class="wrap calc-grid">
+        <form class="card-form calc-form" id="calcForm">
+          <div>
+            <label>Jenis kelamin</label>
+            <div class="seg">
+              <label><input type="radio" name="jk" value="p" checked>Perempuan</label>
+              <label><input type="radio" name="jk" value="l">Laki-laki</label>
+            </div>
+          </div>
+          <div class="row2">
+            <div><label for="kUsia">Usia (tahun)</label><input id="kUsia" type="number" min="18" max="80" value="20" required></div>
+            <div><label for="kBerat">Berat badan (kg)</label><input id="kBerat" type="number" min="30" max="250" step="0.1" placeholder="Contoh: 55" required></div>
+          </div>
+          <div class="row2">
+            <div><label for="kTinggi">Tinggi badan (cm)</label><input id="kTinggi" type="number" min="120" max="220" placeholder="Contoh: 160" required></div>
+            <div>
+              <label for="kTujuan">Tujuan</label>
+              <select id="kTujuan">
+                <option value="turun">Menurunkan berat badan</option>
+                <option value="jaga" selected>Menjaga berat badan</option>
+                <option value="naik">Menaikkan berat badan / otot</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="kAktif">Aktivitas harian</label>
+            <select id="kAktif">
+              <option value="1.2">Jarang gerak (kuliah, rebahan, jarang olahraga)</option>
+              <option value="1.375" selected>Ringan (jalan kaki ke kampus, olahraga 1–3x seminggu)</option>
+              <option value="1.55">Sedang (olahraga 3–5x seminggu)</option>
+              <option value="1.725">Aktif (olahraga berat 6–7x seminggu)</option>
+              <option value="1.9">Sangat aktif (kerja fisik + latihan berat)</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block" type="button" id="calcBtn">Hitung Sekarang</button>
+          <p class="muted center small">Kalkulator ini untuk usia 18 tahun ke atas. Datamu tidak disimpan ke mana pun.</p>
+        </form>
+
+        <div class="calc-out" id="calcOut">
+          <div class="calc-empty">
+            <span class="icon-box"><i data-icon="calculator"></i></span>
+            <b>Hasilnya akan muncul di sini</b>
+            <p>Isi berat dan tinggi badanmu, lalu klik "Hitung Sekarang".</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="disclaimer">
+          <b>Catatan:</b> Hasil kalkulator adalah perkiraan berdasarkan rumus umum (Mifflin-St Jeor untuk kebutuhan energi dan kategori BMI Kemenkes RI), bukan diagnosis. Untuk kondisi kesehatan tertentu, konsultasikan dengan dokter atau ahli gizi.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/kalkulator.js"></script>
+</body>
+</html>
