@@ -342,3 +342,51 @@ details p { margin-top: 10px; color: var(--muted); }
 }
 .checks input { width: auto; }
 #customBtn .icon { width: 22px; height: 22px; }
+
+/* =========================================================
+   Responsif (tablet dan HP)
+   ========================================================= */
+@media (max-width: 1060px) {
+  .diet-grid { grid-template-columns: repeat(3, 1fr); }
+  .feature-grid, .paket-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  :root { --section-pad: 56px; }
+  .hero-inner, .calc-grid, .custom-grid { grid-template-columns: 1fr; }
+  .plate-wrap { order: -1; }
+  .pl-1 { left: 0; } .pl-3 { right: 0; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+
+  /* Navbar jadi menu burger */
+  .burger { display: grid; place-items: center; }
+  .nav-links {
+    position: absolute; top: var(--nav-height); left: 0; right: 0; flex-direction: column; align-items: stretch;
+    gap: 0; background: var(--cream); border-bottom: 1px solid var(--line); padding: 8px 4% 16px; display: none;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a:not(.btn) { padding: 12px 4px; border-bottom: 1px solid var(--line); }
+  .nav-links a.active { text-decoration: none; }
+  .nav-cta { margin-top: 12px; }
+}
+
+@media (max-width: 620px) {
+  :root { --section-pad: 44px; }
+  .diet-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-grid, .paket-grid, .steps, .res-cards, .row2, .belanja, .footer-inner { grid-template-columns: 1fr; }
+  .hero { padding: 36px 0 48px; }
+  .hero-cta { flex-direction: column; }
+  .hero-cta .btn { width: 100%; }
+  .plate-label { font-size: .74rem; padding: 6px 9px; }
+  .card-form, .preview, .unlocked-card, .modal-box { padding: 20px; }
+  .paket .sub { min-height: 0; }
+  .wa-float { padding: 12px; }
+  .wa-float { font-size: 0; gap: 0; }
+  .wa-float .icon { width: 26px; height: 26px; }
+  .menu-table { font-size: .85rem; }
+}
+
+@media (max-width: 400px) {
+  .diet-grid { grid-template-columns: 1fr; }
+}
