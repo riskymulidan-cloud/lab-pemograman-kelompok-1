@@ -281,3 +281,50 @@ details p { margin-top: 10px; color: var(--muted); }
   background: #fff; padding: 18px 22px; border-radius: 16px; box-shadow: var(--shadow); max-width: 340px;
   display: grid; justify-items: center; gap: 8px;
 }
+
+/* ---------- Modal simulasi pembayaran ---------- */
+.modal { position: fixed; inset: 0; background: rgba(20, 30, 20, .55); z-index: 100; display: none; align-items: center; justify-content: center; padding: 16px; }
+.modal.open { display: flex; }
+.modal-box { background: #fff; border-radius: var(--radius-lg); max-width: 560px; width: 100%; max-height: 90vh; overflow: auto; padding: 28px; position: relative; }
+.modal-close {
+  position: absolute; top: 14px; right: 14px; width: 36px; height: 36px; border-radius: 50%; border: none;
+  background: var(--cream); cursor: pointer; display: grid; place-items: center; color: var(--ink);
+}
+.modal-box h3 { font-size: 1.4rem; margin-bottom: 6px; padding-right: 40px; }
+.stepper { display: flex; gap: 8px; margin: 14px 0 20px; }
+.stepper span { flex: 1; height: 6px; border-radius: 9px; background: var(--line); }
+.stepper span.on { background: var(--green); }
+.opt-list { display: grid; gap: 10px; margin: 8px 0 18px; }
+.opt { display: flex; justify-content: space-between; align-items: center; gap: 10px; border: 2px solid var(--line); border-radius: 14px; padding: 14px 16px; cursor: pointer; margin: 0; }
+.opt input { width: auto; margin-right: 10px; }
+.opt:has(input:checked) { border-color: var(--green); background: var(--green-soft); }
+.pay-summary { background: var(--cream); border-radius: 14px; padding: 14px 16px; margin: 12px 0 14px; }
+.pay-summary div { display: flex; justify-content: space-between; padding: 3px 0; }
+.qr-demo {
+  width: 180px; height: 180px; margin: 10px auto; border-radius: 14px; border: 2px dashed var(--orange);
+  display: grid; place-items: center; align-content: center; gap: 6px; color: var(--muted); background: var(--cream);
+}
+.qr-demo .icon { width: 90px; height: 90px; color: var(--ink); opacity: .7; }
+.qr-demo span { font-weight: 800; letter-spacing: .1em; color: var(--orange); }
+.mt { margin-top: 16px; } .mt-s { margin-top: 10px; }
+
+/* ---------- Menu yang sudah terbuka ---------- */
+#menuku { display: none; background: var(--green-soft); }
+#menuku.show { display: block; }
+.unlocked-card { background: #fff; border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow); }
+.unlocked-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 18px; }
+.unlocked-head h2 { margin-top: 8px; }
+.unlocked-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.belanja { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 26px; }
+.belanja ul { list-style: none; }
+.belanja li { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-bottom: 1px dashed var(--line); font-size: .93rem; }
+.belanja .total { font-weight: 800; color: var(--green-dark); border-bottom: none; }
+.with-icon { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; color: var(--green-dark); }
+.tips { background: var(--cream); border-radius: 16px; padding: 18px 20px; }
+.tips li { border: none; display: list-item; margin-left: 18px; list-style: disc; padding: 4px 0; }
+
+@media print {
+  .navbar, .footer, .wa-float, .page-head, .paket-section, .no-print { display: none !important; }
+  #menuku { display: block !important; background: #fff; }
+  .unlocked-card { box-shadow: none; }
+}

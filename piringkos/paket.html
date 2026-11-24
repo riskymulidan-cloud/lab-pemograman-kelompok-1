@@ -112,9 +112,22 @@
         </div>
       </div>
     </section>
+
+    <!-- MENU YANG SUDAH TERBUKA (muncul setelah simulasi bayar) -->
+    <section id="menuku">
+      <div class="wrap"><div class="unlocked-card" id="menukuCard"></div></div>
+    </section>
   </main>
 
   <footer id="site-footer"></footer>
+
+  <!-- MODAL SIMULASI PEMBAYARAN -->
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Simulasi pembayaran">
+    <div class="modal-box">
+      <button class="modal-close" type="button" data-close aria-label="Tutup"><i data-icon="close"></i></button>
+      <div id="checkoutBody"></div>
+    </div>
+  </div>
 
   <script src="js/icons.js"></script>
   <script src="js/components.js"></script>
