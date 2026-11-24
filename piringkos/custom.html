@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Custom · Piring Kos</title>
+  <meta name="description" content="Menu diet seminggu yang disesuaikan budget, alat masak, dan pantanganmu. Rp12 ribu per minggu.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <section class="custom-section">
+      <div class="wrap custom-grid">
+        <div>
+          <span class="eyebrow">Menu custom · Rp12.000/minggu</span>
+          <h1>Menu seminggu yang pas dengan kondisimu</h1>
+          <p class="lead">Ceritakan budget, alat masak, dan pantanganmu. Kami susunkan menu 7 hari lengkap dengan daftar belanjanya, dikirim maksimal 1×24 jam lewat WhatsApp.</p>
+          <div class="custom-points">
+            <div class="cp"><span class="icon-box"><i data-icon="wallet"></i></span><div><b>Sesuai budget</b><p class="muted">Menu disusun supaya total belanja seminggu tidak lewat budget-mu.</p></div></div>
+            <div class="cp"><span class="icon-box"><i data-icon="pan"></i></span><div><b>Sesuai alat di kos</b><p class="muted">Cuma punya rice cooker? Menunya disesuaikan.</p></div></div>
+            <div class="cp"><span class="icon-box"><i data-icon="ban"></i></span><div><b>Bebas pantangan</b><p class="muted">Alergi atau tidak suka bahan tertentu? Tinggal tulis.</p></div></div>
+            <div class="cp"><span class="icon-box"><i data-icon="chat"></i></span><div><b>1x revisi gratis</b><p class="muted">Kalau ada bahan yang susah dicari, menunya bisa diganti.</p></div></div>
+          </div>
+        </div>
+
+        <form class="card-form" id="customForm">
+          <h3>Form pesanan Menu Custom</h3>
+          <div class="row2">
+            <div>
+              <label for="cNama">Nama panggilan</label>
+              <input id="cNama" required placeholder="Contoh: Dinda">
+            </div>
+            <div>
+              <label for="cDiet">Gaya diet</label>
+              <select id="cDiet"></select>
+            </div>
+          </div>
+          <div class="row2">
+            <div>
+              <label for="cBudget">Budget belanja per minggu</label>
+              <select id="cBudget">
+                <option>Di bawah Rp100 ribu</option>
+                <option selected>Rp100–150 ribu</option>
+                <option>Rp150–200 ribu</option>
+                <option>Rp200–250 ribu</option>
+                <option>Di atas Rp250 ribu</option>
+              </select>
+            </div>
+            <div>
+              <label for="cMakan">Makan per hari</label>
+              <select id="cMakan">
+                <option>2x sehari</option>
+                <option selected>3x sehari</option>
+                <option>3x sehari + camilan</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>Alat masak yang kamu punya</label>
+            <div class="checks" id="cAlat">
+              <label><input type="checkbox" value="Rice cooker" checked> Rice cooker</label>
+              <label><input type="checkbox" value="Teflon"> Teflon</label>
+              <label><input type="checkbox" value="Kompor"> Kompor</label>
+              <label><input type="checkbox" value="Panci"> Panci</label>
+              <label><input type="checkbox" value="Microwave"> Microwave</label>
+              <label><input type="checkbox" value="Kulkas"> Kulkas</label>
+            </div>
+          </div>
+          <div>
+            <label for="cPantang">Alergi atau bahan yang tidak disukai</label>
+            <input id="cPantang" placeholder="Contoh: udang, terong, tidak suka pedas">
+          </div>
+          <div>
+            <label for="cCatatan">Catatan lain (opsional)</label>
+            <textarea id="cCatatan" rows="3" placeholder="Contoh: masak cuma sempat malam hari, siang sering makan di kampus"></textarea>
+          </div>
+          <button type="button" id="customBtn" class="btn btn-wa btn-block"><i data-icon="whatsapp"></i> Kirim ke WhatsApp</button>
+          <p class="muted center small">Detail pembayaran dikirim lewat chat WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
