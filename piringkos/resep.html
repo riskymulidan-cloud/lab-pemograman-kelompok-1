@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resep Gratis · Piring Kos</title>
+  <meta name="description" content="25 resep diet gratis untuk anak kos: bisa dimasak pakai rice cooker atau teflon, lengkap dengan kalori, harga, bahan, dan langkah.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/resep.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">Resep gratis · 5 gaya diet</span>
+        <h1>Resep sehat ala anak kos</h1>
+        <p class="lead">Pilih gaya diet, lalu klik resep untuk melihat bahan dan langkahnya. Semua bisa dimasak pakai rice cooker atau teflon.</p>
+      </div>
+    </section>
+
+    <section class="resep-section">
+      <div class="wrap">
+        <div class="diet-tabs" id="dietTabs" role="tablist" aria-label="Pilih gaya diet"></div>
+        <div class="diet-info" id="dietInfo"></div>
+        <div class="recipe-grid" id="recipeGrid"></div>
+
+        <div class="disclaimer" style="margin-top:28px">
+          <b>Catatan:</b> Kalori dan harga bahan adalah perkiraan. Sesuaikan porsi dengan kebutuhanmu (cek di <a href="kalkulator.html">Kalkulator</a>), dan konsultasikan dengan dokter atau ahli gizi untuk kondisi kesehatan tertentu.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <!-- MODAL DETAIL RESEP -->
+  <div class="modal" id="recipeModal" role="dialog" aria-modal="true" aria-label="Detail resep">
+    <div class="modal-box">
+      <button class="modal-close" type="button" data-close aria-label="Tutup"><i data-icon="close"></i></button>
+      <div id="recipeBody"></div>
+    </div>
+  </div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/resep.js"></script>
+</body>
+</html>
