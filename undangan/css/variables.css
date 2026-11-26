@@ -1,0 +1,38 @@
+/* Atelier Nara — variabel desain (warna, font, z-index). Dipakai oleh css/style.css. */
+/* =========================================================
+   1. DESIGN TOKENS
+   ========================================================= */
+:root{
+  --ivory:#F8F5EF;
+  --cream:#EFE8DD;
+  --rose:#D7A6A1;
+  --sage:#A6B09A;
+  --terra:#B97862;
+  --gold:#C3A477;
+  --espresso:#42362F;
+
+  --ink:#42362F;
+  --ink-2:#6B5D54;
+  --ink-3:#9A8C82;
+  --paper:#FCFAF6;
+  --line:rgba(195,164,119,.5);
+  --line-soft:rgba(66,54,47,.12);
+
+  --serif:'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --sans:'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --script:'Pinyon Script', 'Cormorant Garamond', cursive;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --nav-h:78px;
+  --gutter:24px;
+
+  --z-grain:1;
+  --z-float:90;
+  --z-mobile-menu:95;
+  --z-nav:100;
+  --z-modal:200;
+  --z-invite:300;
+  --z-lightbox:400;
+  --z-toast:500;
+}
